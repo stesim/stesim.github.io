@@ -121,7 +121,11 @@ function simplePolygonFromVectorList( vectors )
 	}
 
 	previous.next = root;
-	root.previous = previous;
+	root.prev = previous;
 
 	return root;
+}
+
+function triangulateSimplePolygonDCEL( dcel )
+{
 }
